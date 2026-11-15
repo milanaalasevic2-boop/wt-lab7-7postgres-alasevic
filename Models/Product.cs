@@ -1,4 +1,4 @@
-namespace wt_lab6_6minimalapi_alasevic.Models;
+namespace wt_lab7_7postgres_alasevic.Models;
 
 public class Product
 {
@@ -7,5 +7,7 @@ public class Product
     public string Category { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public bool IsAvailable { get; set; }
+    
+    
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow; 
 }
-
